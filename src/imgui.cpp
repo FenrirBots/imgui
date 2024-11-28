@@ -1063,9 +1063,9 @@ CODE
 #define IMGUI_DEFINE_MATH_OPERATORS
 #endif
 
-#include "imgui.h"
+#include "imgui/include/imgui.h"
 #ifndef IMGUI_DISABLE
-#include "imgui_internal.h"
+#include "imgui/include/imgui_internal.h"
 
 // System includes
 #include <stdio.h>      // vsnprintf, sscanf, printf
@@ -2064,7 +2064,7 @@ const char* ImStrSkipBlank(const char* str)
 #ifdef IMGUI_STB_SPRINTF_FILENAME
 #include IMGUI_STB_SPRINTF_FILENAME
 #else
-#include "stb_sprintf.h"
+#include "stb/include/stb_sprintf.h"
 #endif
 #endif // #ifdef IMGUI_USE_STB_SPRINTF
 
@@ -16783,7 +16783,7 @@ void ImGui::DebugHookIdInfo(ImGuiID, ImGuiDataType, const void*, const void*) {}
 // Include imgui_user.inl at the end of imgui.cpp to access private data/functions that aren't exposed.
 // Prefer just including imgui_internal.h from your code rather than using this define. If a declaration is missing from imgui_internal.h add it or request it on the github.
 #ifdef IMGUI_INCLUDE_IMGUI_USER_INL
-#include "imgui_user.inl"
+#include "imgui/include/imgui_user.inl"
 #endif
 
 //-----------------------------------------------------------------------------
