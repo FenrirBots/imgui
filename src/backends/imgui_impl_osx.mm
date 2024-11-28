@@ -19,9 +19,9 @@
 // - Documentation        https://dearimgui.com/docs (same as your local docs/ folder).
 // - Introduction, links and more at the top of imgui.cpp
 
-#import "imgui.h"
+#import "imgui/include/imgui.h"
 #ifndef IMGUI_DISABLE
-#import "imgui_impl_osx.h"
+#import "imgui/include/backends/imgui_impl_osx.h"
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 #import <GameController/GameController.h>

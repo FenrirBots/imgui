@@ -32,9 +32,9 @@
 //  2018-11-30: Misc: Setting up io.BackendRendererName so it can be displayed in the About Window.
 //  2018-07-05: Metal: Added new Metal backend implementation.
 
-#include "imgui.h"
+#include "imgui/include/imgui.h"
 #ifndef IMGUI_DISABLE
-#include "imgui_impl_metal.h"
+#include "imgui/include/backends/imgui_impl_metal.h"
 #import <time.h>
 #import <Metal/Metal.h>
 

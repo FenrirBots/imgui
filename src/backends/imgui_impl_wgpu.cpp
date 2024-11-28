@@ -52,9 +52,9 @@
     #endif
 #endif
 
-#include "imgui.h"
+#include "imgui/include/imgui.h"
 #ifndef IMGUI_DISABLE
-#include "imgui_impl_wgpu.h"
+#include "imgui/include/backends/imgui_impl_wgpu.h"
 #include <limits.h>
 #include <webgpu/webgpu.h>
 
